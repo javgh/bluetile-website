@@ -224,6 +224,19 @@ p#author {
     text-align: right;
 }
 
+div#translation_helper {
+    text-align: right;
+    position: relative;
+    height: 20px;
+}
+
+p#translation {
+    position: absolute;
+    right: 0;
+    font-size: 75%;
+    line-height: 1.3em;
+}
+
 object#screencast {
     display: block;
     margin: 0 auto 5px auto;
