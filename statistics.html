@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <title>The state of tiling window managers - a few statistics</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <meta name="author" content="Jan Vornberger" />
+        <meta name="generator" content="VIM - Vi IMproved" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Design "Deliciously Blue" - http://www.oswd.org/design/information/id/2634 -->
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="container2">
+
+                <div id="content">
+
+                    <h2><a name="about">The state of tiling window managers - a few statistics</a></h2>
+                    <p>
+                        These are a few numbers that I compiled to satisfy my curiousity. They are based on data
+                        collected by the <a href="http://popcon.debian.org/">Debian Popularity Contest</a> and as such
+                        only take Debian users into account. I have no idea how representative this is, but it's fun
+                        to look at regardless. :-)
+                    </p>
+
+                    <p>
+                        To start things off: A rough approximation of the ratio of stacking ('normal') window managers
+                        to tiling window managers. This takes installations of Debian packages for a number of window
+                        managers into account. I tried to pick a somewhat representative list of window managers [1], but
+                        it might be totally off. =) Also: This does not take into account the recent addition of
+                        tiling capabilities to KWin.
+                    </p>
+
+                    <p>
+                        <img src="images/ratio_swms_to_twms.png" alt="Ratio of SWMs to TWMs" />
+                    </p>
+
+                    <p>
+                        The following shows 'market share' for various tiling window managers. I tried to include
+                        all TWMs that have a Debian package and a least a small installation base. Hopefully I
+                        haven't overlooked any relevant projects.
+                    </p>
+
+                    <p>
+                        <a href="http://awesome.naquadah.org/">Awesome</a> and <a href="http://xmonad.org/">XMonad</a> are
+                        usually the first projects to be mentioned when the topic of tiling
+                        comes up. Together they dominate almost half of the 'TWM market'. I'm surprised
+                        about the high percentage for <a href="http://dwm.suckless.org/">dwm</a> though, considering that
+                        this counts the installed Debian packages which
+                        you can't use, if you configure dwm (to change the configuration of dwm you have to compile from source).
+                        Apparently a lot of people are happy with the defaults (?).
+                    </p>
+
+                    <p>
+                        <img src="images/twm_market_shares.png" alt="Market shares of various TWMs" />
+                    </p>
+
+                    <p>
+                        Finally: Growth rates for these TWMs. This shows how the respective market share of the projects
+                        has changed over the last two months.
+                    </p>
+
+                    <p>
+                        Sadly, a lot of projects are actually losing users right now - or at least Debian users. It's still
+                        my favorite graph though, since <a href="http://www.bluetile.org">Bluetile</a> is doing so well on it. :-)
+                    </p>
+
+                    <p>
+                        <img src="images/twm_growth_rates.png" alt="Growth rates of tiling window managers" />
+                    </p>
+
+                    <p>
+                        And at the current rate of development, Bluetile will overtake Awesome in just under 2 and 1/2 years. ;-)
+                    </p>
+
+                </div>
+
+                <div id="footer">
+                </div>
+                <p id="author"><a href="mailto:jan.vornberger@informatik.uni-oldenburg.de">Jan Vornberger</a></p>
+            </div>
+            [1] Stacking window managers considered: afterstep, blackbox, compiz, e16, evilwm, fluxbox, fvwm, icewm,
+            kde-window-manager, metacity, mutter, openbox, sawfish, wmaker and xfwm4
+        </div>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-10630793-1");
+                pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <title>Bluetile - full-featured tiling for the GNOME desktop environment</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <meta name="author" content="Jan Vornberger" />
+        <meta name="generator" content="VIM - Vi IMproved" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Design "Deliciously Blue" - http://www.oswd.org/design/information/id/2634 -->
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="header">
+                <h1>Bluetile</h1>
+                <p>full-featured tiling for the GNOME desktop environment</p>
+            </div>
+
+            <div id="tabs10">
+                <ul>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#news"><span>News</span></a></li>
+                    <li><a href="#screenshots"><span>Screenshots</span></a></li>
+                    <li><a href="#download"><span>Download</span></a></li>
+                    <li><a href="#documentation"><span>Documentation</span></a></li>
+                    <li><a href="#development"><span>Development</span></a></li>
+                </ul>
+            </div>
+
+            <div id="container2">
+
+                <div id="content">
+
+                    <h2><a name="about">About</a></h2>
+                    <p>
+                        <object id="screencast" width="400" height="300" type="application/x-shockwave-flash" data="http://vimeo.com/moogaloop.swf?clip_id=6661713&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1">
+                            <param name="allowfullscreen" value="true" />
+                            <param name="allowscriptaccess" value="always" />
+                            <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6661713&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />
+                        </object>
+
+                        Bluetile is a tiling window manager for Linux, designed to integrate with the GNOME desktop
+                        environment. It provides both a traditional, stacking layout mode as well as tiling
+                        layouts where windows are arranged to use the entire screen without overlapping.
+                        Bluetile tries to make the tiling paradigm easily accessible to users coming from
+                        traditional window managers by drawing on known conventions and providing both mouse and
+                        keyboard access for all features.
+
+                        <br /><br />
+
+                        Bluetile started as a university project and topic of my thesis (you can find
+                        <a href="http://parsys.informatik.uni-oldenburg.de/theses/th_ip-vornberger.html">slides of my talks and the thesis</a>
+                        online, but only in German). It now continues as an open source
+                        project. See the <a href="http://www.haskell.org/haskellwiki/Bluetile#Why_write_yet_another_tiling_window_manager.3F">wiki</a>
+                        for more background on the motivation behind Bluetile and its
+                        <a href="http://www.haskell.org/haskellwiki/Bluetile#What_is_the_relationship_between_Bluetile_and_xmonad.3F">relationship to xmonad</a>.
+                    </p>
+
+                    <ul>
+                        <li>Designed to integrate with the GNOME desktop environment</li>
+                        <li>Hybrid approach: Stacking window layout &amp; tiling layouts available</li>
+                        <li>All features accessible from mouse, as well as keyboard</li>
+                        <li>Maximizing &amp; minimizing windows in all layouts</li>
+                        <li>Good multihead support</li>
+                        <li>Proper handling of fullscreen applications</li>
+                    </ul>
+
+                    <h2><a name="news">News</a></h2>
+                    <p>
+                        <b>Bluetile 0.6 (on 2011/11/26):</b> Now that XMonad 0.10 is out, it was possible to clean up Bluetile's code
+                        base and reference modules from xmonad-contrib 0.10 instead.<br /><br />
+
+                        Furthermore, the modules XMonad.Hooks.ICCCMFocus (workaround for some
+                        problems with Java-based applications) and XMonad.Actions.PhysicalScreens
+                        (enumerating multiple monitors in a sensible manner) have been
+                        incorporated into the standard configuration.
+                    </p>
+
+                    <p>
+                        <b>Bluetile 0.5.3 (on 2010/08/10):</b> Bluetile's theme is now configurable, including the font that is used.
+                        I also switched back to the old, grey-ish theme. For reference, below
+                        is the blue-ish theme, which was used for a few releases in an attempt
+                        to make the focused window stand out more. However, it was not very
+                        well received, apparently. Everyone is welcome to choose their own
+                        color combinations now. :-)
+
+                        <br /><br />
+                        <textarea name="theme" rows="10" cols="50" style="display: block; margin: 0 auto 5px auto;">
+decoration_focused_color = #7ca3d3
+decoration_focused_text_color = white
+decoration_focused_border_color = white
+decoration_normal_color = #e3e2e1
+decoration_normal_text_color = black
+decoration_normal_border_color = black
+decoration_font = xft: Sans Bold:size=9
+window_border_focused_color = black
+window_border_normal_color = gray
+                        </textarea>
+                        <br />
+
+                        Bluetile should also now build on Ubuntu Maverick Meerkat thanks to a
+                        patch by Iain Lane.
+                    </p>
+
+                    <h2><a name="screenshots">Screenshots</a></h2>
+                    <p>
+                        <a href="images/bluetile_screenshot1.png"><img src="images/bluetile_screenshot1_thumb.png" alt="Screenshot of stacking window layout" /></a>
+                        <a href="images/bluetile_screenshot2.png"><img src="images/bluetile_screenshot2_thumb.png" alt="Screenshot of tiled vertical layout" /></a>
+                    </p>
+
+                    <h2><a name="download">Download</a></h2>
+                    <p>
+                        Bluetile is available in a number of Linux distributions. Check your package manager!
+                    </p>
+
+                    <p>
+                        Bluetile is also available through the
+                        <a href="http://hackage.haskell.org/package/bluetile">HackageDB</a>. The current
+                        version is 0.6. You will need a Haskell compiler as well as 'cabal-install' to
+                        install Haskell packages form HackageDB. I recommend to get the
+                        <a href="http://hackage.haskell.org/platform/">Haskell Platform</a>
+                        which contains all necessary software and is probably available through your distribution.
+
+                        Once you have the Haskell Platform, the following commands will install Bluetile from Hackage:
+
+                        <textarea name="cabal" rows="3" cols="50" style="display: block; margin: 0 auto 5px auto;">
+$ cabal update
+$ cabal install bluetile
+                        </textarea>
+
+                        If you get a message about unsatisfied dependencies "gtk" and "glade", you will
+                        need to install Gtk2Hs. Your distribution might include packages for it, otherwise
+                        you can get it from <a href="http://www.haskell.org/gtk2hs/">http://www.haskell.org/gtk2hs/</a>.
+
+                        <br /><br />
+
+                        If you install as a normal user, Cabal will put the binaries into the
+                        directory ~/.cabal/bin by default. Add this directory to your PATH or
+                        run the command as given below.
+                        <br /><br />
+
+                        <textarea name="cabal" rows="2" cols="50" style="display: block; margin: 0 auto 5px auto;">
+$ ~/.cabal/bin/bluetile
+                        </textarea>
+
+                        If you encounter problems during installation, have a look at the
+                        <a href="http://www.haskell.org/haskellwiki/Bluetile#I.27m_having_trouble_installing_Bluetile_-_any_walkthrough_available.3F">wiki</a>
+                        for some more details.
+                    </p>
+
+                    <h2><a name="documentation">Documentation</a></h2>
+                    <p>
+                        Preferably you should start Bluetile
+                        from a terminal under GNOME + Metacity. Bluetile will replace the currently
+                        running window manager (if the window manager supports this) and start up.
+
+                        <br /><br />
+
+                        This is a list of most keyboard shortcuts for Bluetile:
+                    </p>
+
+                    <table>
+                        <tr><td>Win+Return</td><td>Launch terminal</td></tr>
+                        <tr><td>Win+p</td><td>Launch GNOME "Run application" dialog</td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                        <tr><td>Win+a</td><td>Switch to stacking window layout</td></tr>
+                        <tr><td>Win+s</td><td>Switch to tiled horizontal layout</td></tr>
+                        <tr><td>Win+d</td><td>Switch to tiled vertical layout</td></tr>
+                        <tr><td>Win+f</td><td>Switch to fullscreen layout</td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                        <tr><td>Win+j</td><td>Move focus to the next window</td></tr>
+                        <tr><td>Win+k</td><td>Move focus to the previous window</td></tr>
+                        <tr><td>Win+Space</td><td>Move focus to the master window</td></tr>
+                        <tr><td>Win+Shift+j</td><td>Swap the focused window with the next window</td></tr>
+                        <tr><td>Win+Shift+k</td><td>Swap the focused window with the previous window</td></tr>
+                        <tr><td>Win+Shift+Space</td><td>Swap the focused window with the master window</td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                        <tr><td>Win+h</td><td>Shrink the master area</td></tr>
+                        <tr><td>Win+l</td><td>Expand the master area</td></tr>
+                        <tr><td>Win+u</td><td>Shrink a slave area</td></tr>
+                        <tr><td>Win+i</td><td>Expand a slave area</td></tr>
+                        <tr><td>Win+,</td><td>Increment the number of windows in the master area</td></tr>
+                        <tr><td>Win+.</td><td>Decrement the number of windows in the master area</td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                        <tr><td>Win+Shift+c</td><td>Close the focused window</td></tr>
+                        <tr><td>Win+z</td><td>Maximize/zoom focused window</td></tr>
+                        <tr><td>Win+m</td><td>Minimize focused window</td></tr>
+                        <tr><td>Win+Shift+m</td><td>Restore next minimized window</td></tr>
+                        <tr><td>Win+o</td><td>Show window menu for focused window</td></tr>
+                        <tr><td>Win+t</td><td>Push dialog window back into tiling</td></tr>
+                        <tr><td>Win+b</td><td>Toggle to previously displayed workspace</td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                        <tr><td>Win+1 .. Win+9, Win+0</td><td>Switch to workspace N</td></tr>
+                        <tr><td>Win+Shift+1 .. Win+Shift+9, Win+Shift+0</td><td>Move client to workspace N</td></tr>
+                        <tr><td>Win+w, Win+e, Win+r</td><td>Switch to physical/Xinerama screens 1, 2 or 3</td></tr>
+                        <tr><td>Win+Shift+w, Win+Shift+e, Win+Shift+r</td><td>Move client to physical/Xinerama screen 1, 2 or 3</td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+                        <tr><td>Win+F5</td><td>Refresh layout</td></tr>
+                        <tr><td>Win+Shift+q</td><td>Quit Bluetile</td></tr>
+                    </table>
+
+                    <p>
+                        Bluetile can be configured by editing the file ~/.bluetilerc .
+
+                        <br /><br />
+
+                        One way to set up Bluetile as your default window manager under GNOME is to make sure that the
+                        environment variable WINDOW_MANAGER contains the path to the Bluetile binary before GNOME starts.
+                        This can be achieved by putting something like the following line into ~/.gnomerc:
+
+                        <br /><br />
+
+                        <textarea name="cabal" rows="2" cols="60" style="display: block; margin: 0 auto 5px auto;">
+export WINDOW_MANAGER=/home/user/.cabal/bin/bluetile
+                        </textarea>
+                    </p>
+
+                    <h2><a name="development">Development</a></h2>
+                    <p>
+                        Bluetile's repository is located at
+                        <a href="http://code.haskell.org/~jav/bluetile/">http://code.haskell.org/~jav/bluetile/</a>.
+                        The <a href="http://www.haskell.org/haskellwiki/Bluetile/Development">wiki</a>
+                        also has a page discussing the development of Bluetile.
+
+                        <br /><br />
+
+                        <textarea name="darcs" rows="2" cols="100" style="display: block; margin: 0 auto 5px auto;">
+$ darcs get http://code.haskell.org/~jav/bluetile/
+                        </textarea>
+
+                        If you enjoy using Bluetile and have a few <a href="http://www.bitcoin.org/">Bitcoins</a> to spare,
+                        your donation to the address 12y11u5DBXpQ8XM3g6o6Wc155S16maTWL6 is much appreciated.
+                    </p>
+
+                </div>
+
+                <div id="footer">
+                </div>
+
+                <p id="author"><a href="mailto:jan.vornberger@informatik.uni-oldenburg.de">Jan Vornberger</a></p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-10630793-1");
+                pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+    </body>
+</html>
