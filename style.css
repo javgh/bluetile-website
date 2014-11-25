@@ -224,7 +224,7 @@ p#author {
     text-align: right;
 }
 
-object#screencast {
+iframe#screencast {
     display: block;
     margin: 0 auto 5px auto;
 }
